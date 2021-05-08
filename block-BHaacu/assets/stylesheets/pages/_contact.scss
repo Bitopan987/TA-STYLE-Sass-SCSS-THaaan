@@ -1,0 +1,57 @@
+/* ---------------------------------------------------------------
+ Contact Section
+--------------------------------------------------------------- */
+
+.contact {
+  background-color: $bg;
+  padding: 6rem 0;
+  &_text {
+    font-size: 1.2rem;
+    color: $dark;
+    padding-bottom: 4rem;
+  }
+  &_icon {
+    background-color: #d8e4ee;
+    height: 6rem;
+    width: 6rem;
+    display: inline-block;
+    padding: 1.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: $primary;
+  }
+  &_col {
+    h4 {
+      padding: 0.5rem 0;
+    }
+    h5 {
+      font-weight: 300;
+    }
+    .dark {
+      color: $secondary;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------
+ Form Section
+--------------------------------------------------------------- */
+
+.form {
+  padding: 6rem 0;
+  h4 {
+    color: $dark;
+    font-size: 1.2rem;
+    padding: 1rem 0 3rem 0;
+  }
+  &_control {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    border: 2px solid $bg;
+    outline: none;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,81 @@
+.header {
+  li {
+    margin-right: 1rem;
+  }
+  &_top-bar {
+    background-color: $primary;
+    padding: 0.5rem 0;
+    a {
+      color: $bg;
+      font-size: 1rem;
+    }
+    i {
+      padding-right: 0.5rem;
+      color: $pure;
+    }
+  }
+  &_nav-bar {
+    background-color: $bg;
+    padding: 0.6rem 0;
+    .brand {
+      font-size: 2.2rem;
+      color: $secondary;
+      font-weight: 900;
+    }
+    .brand span {
+      color: $primary;
+      padding-right: 0.3rem;
+    }
+    a {
+      color: $secondary;
+      font-weight: 600;
+      font-size: 1rem;
+      &:hover {
+        color: $primary;
+      }
+    }
+    .sub-menu-box {
+      position: relative;
+    }
+    .sub-menu {
+      position: absolute;
+      background-color: $pure;
+      width: 11rem;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+      left: 50%;
+      transform: translate(-50%);
+      display: none;
+      top: 3rem;
+      z-index: 99;
+      border-radius: 7px;
+    }
+    .sub-menu::before {
+      content: "";
+      height: 2rem;
+      width: 2rem;
+      background-color: $pure;
+      position: absolute;
+      z-index: -99;
+      transform: rotate(45deg);
+      top: -1rem;
+      left: 42%;
+    }
+    .sub-menu-box:hover .sub-menu {
+      display: inline-block;
+    }
+    .sub-menu li {
+      margin: 13px 0;
+    }
+    .sub-menu a:hover {
+      color: $primary;
+    }
+    .sub-menu-box i {
+      padding: 0 0 6px 5px;
+    }
+    #toggle,
+    .bars {
+      display: none;
+    }
+  }
+}

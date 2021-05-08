@@ -4,7 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment-1 SCSS|Home Page</title>
+    <title>Assignment-1 SCSS|Services Page</title>
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/stylesheets/style.css" />
+    <!-- Font-Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b8c71f3ce4.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Font Family -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -55,9 +68,9 @@
         <nav class="flex container align-center justify-between">
           <a href="#" class="brand"><span>Uni</span>TECH</a>
           <ul class="flex justify-between">
-            <li><a id="active" href="./index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About Us</a></li>
-            <li><a href="./services.html">Services</a></li>
+            <li><a id="active" href="./services.html">Services</a></li>
             <li class="sub-menu-box">
               <a href="#" class="flex justify-between align-center">
                 <span>Pages</span>
@@ -84,93 +97,95 @@
         </nav>
       </div>
     </header>
-
-    <!-- Hero Section -->
-
     <main>
-      <section class="hero">
-        <div class="container">
-          <article>
-            <h1 class="hero_heading">
-              BEST BUSINESS <br />
-              SERVICES
-            </h1>
-            <h4 class="hero_text">Let's Grow Your Business Together</h4>
-            <a href="#" class="btn btn-primary">Quick Call</a>
-          </article>
-        </div>
+      <!-- Top Section -->
+
+      <section class="top_section center padding">
+        <h3>Services</h3>
+        <p>Aspernatur at enim exceturi facere in reiciendies.</p>
       </section>
 
-      <!-- Service Section -->
+      <!-- Our Services -->
 
-      <section class="service padding">
-        <div class="container">
-          <h3 class="service_heading center">Our Services</h3>
-          <p class="service_text center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit dignissimos!
-          </p>
-          <div class="flex justify-between">
-            <article class="service_col">
-              <img src="./assets/media/consulting.svg" alt="" />
-              <h4>Consulting</h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-                qui similique enim quisquam nostrum.
-              </p>
-              <a href="#" class="btn btn-secondary">Read More</a>
-            </article>
-            <article class="service_col">
-              <img src="./assets/media/finance.svg" alt="" />
-              <h4>Finance</h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-                qui similique enim quisquam nostrum.
-              </p>
-              <a href="#" class="btn btn-secondary">Read More</a>
-            </article>
-            <article class="service_col">
-              <img src="./assets/media/technology.svg" alt="" />
-              <h4>Technology</h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-                qui similique enim quisquam nostrum.
-              </p>
-              <a href="#" class="btn btn-secondary">Read More</a>
-            </article>
+      <section class="our-service padding">
+        <div
+          class="container our-service_col flex justify-between align-center"
+        >
+          <article class="flex-48">
+            <h6>Our Services</h6>
+            <h3>Find the best services and consulting for affordable deals.</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+              sed, voluptatibus accusantium corporis porro consequuntur quae
+              reiciendis, harum inventore, magnam necessitatibus id? Obcaecati
+              consequuntur mollitia repudiandae, labore iusto sint id saepe
+              quisquam eaque.
+            </p>
+          </article>
+          <div class="flex-48">
+            <img src="./assets/media/business-1.jpg" alt="img-woman-1.jpg" />
           </div>
         </div>
       </section>
 
-      <!-- Solution Section -->
+      <!-- Our Products -->
 
-      <section class="solution padding">
-        <div class="solution_content center">
-          <h2>Get all type of Solutions</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum
-            aperiam porro voluptatem quaerat facere earum explicabo assumenda
-            eos rem!
+      <section class="product">
+        <div class="container">
+          <h3 class="product_heading center">Our Services</h3>
+          <p class="product_text center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit dignissimos!
           </p>
-          <a href="#" class="btn btn-tertiary">Read More</a>
-        </div>
-      </section>
-
-      <!-- About Section -->
-
-      <section class="about padding">
-        <div class="container about_col flex justify-between align-center">
-          <article class="about_content flex-48 center">
-            <img src="./assets/media/react.svg" alt="react.svg" />
-            <h3>We are Top Consulting Firm in the World</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque minus rem iure at accusantium.
-            </p>
-            <a href="#" class="btn btn-tertiary">Read More</a>
-          </article>
-          <div class="flex-48">
-            <img src="./assets/media/team.jpg" alt="team.jpg" />
+          <div class="flex justify-between wrap">
+            <article class="product_col">
+              <img src="./assets/media/feature.svg" alt="feature.svg" />
+              <h4>Excellent Features</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+                qui similique enim quisquam nostrum.
+              </p>
+            </article>
+            <article class="product_col">
+              <img src="./assets/media/finance.svg" alt="finance.svg" />
+              <h4>Powerful API</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+                qui similique enim quisquam nostrum.
+              </p>
+            </article>
+            <article class="product_col">
+              <img src="./assets/media/blockchain.svg" alt="blockchain.svg" />
+              <h4>Blockchain Based</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+                qui similique enim quisquam nostrum.
+              </p>
+            </article>
+            <article class="product_col">
+              <img src="./assets/media/vuejs.svg" alt="vuejs.svg" />
+              <h4>VueJS included</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+                qui similique enim quisquam nostrum.
+              </p>
+            </article>
+            <article class="product_col">
+              <img src="./assets/media/react.svg" alt="react.svg" />
+              <h4>React Powered</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+                qui similique enim quisquam nostrum.
+              </p>
+            </article>
+            <article class="product_col">
+              <img src="./assets/media/angular.svg" alt="angular.svg" />
+              <h4>Angular Compatible</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+                qui similique enim quisquam nostrum.
+              </p>
+            </article>
           </div>
         </div>
         <div class="quote padding">
@@ -178,73 +193,41 @@
             class="quote_text flex container justify-between align-center"
           >
             <div>
-              <h5>The best business consultancy services in the world</h5>
-              <p>
-                There are many variation of passages of Lorem Ipsum available
-                the majority alteration
-              </p>
+              <div class="flex align-center">
+                <strong>Best Deals | </strong>
+                <p>
+                  There are many Lorem Ipsum available the majority alteration
+                </p>
+              </div>
             </div>
             <div><a href="#" class="btn btn-ternary">Request Quote</a></div>
           </article>
         </div>
       </section>
 
-      <!-- Role Section -->
+      <!-- Award Section -->
 
-      <section class="role padding">
-        <div class="container flex justify-between align-center">
-          <article class="role_content flex-48">
-            <h3 class="role_heading">Industry Leader In Consulting Services</h3>
-            <p class="role_text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi,
-              doloribus. Quaerat, delectus. Inventore debitis expedita corporis
-              sequi sed laborum! Reiciendis debitis quidem dolorum nostrum quo
-              perferendis vitae ea commodi minima.
+      <section class="award padding">
+        <h3 class="center">Best Awarded</h3>
+        <h5 class="center">
+          Lorem ipsum dolor Lorem ipsum dolor sit amet. sit amet consectetur
+          adipisicing <br />elit. Reprehenderit dignissimos!
+        </h5>
+        <div class="container award_col flex justify-between align-center">
+          <article class="award_content flex-48 center">
+            <img src="./assets/media/react.svg" alt="react.svg" />
+            <h3>
+              There are many variations of passages of Lorem Ipsum available
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque minus rem iure at accusantium Lorem ipsum dolor sit
+              amet.
             </p>
           </article>
           <div class="flex-48">
-            <img src="./assets/media/img-woman-1.jpg" alt="img-woman-1.jpg" />
+            <img src="./assets/media/business-4.jpg" alt="business-4.jpg" />
           </div>
-        </div>
-      </section>
-
-      <!-- Client Section -->
-
-      <section class="client padding">
-        <div class="container">
-          <h2 class="center">Our Clients</h2>
-          <ul class="flex justify-between align-center">
-            <li>
-              <a href="#"
-                ><img src="./assets/media/spotify.png" alt="spotify.png"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="./assets/media/glasfit.png" alt="glasfit.png"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="./assets/media/atlassian.png" alt="atlassian.png"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="./assets/media/oracle.png" alt="oracle.png"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="./assets/media/airbnb.png" alt="airbnb.png"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="./assets/media/patio.png" alt="patio.png"
-              /></a>
-            </li>
-          </ul>
         </div>
       </section>
     </main>
