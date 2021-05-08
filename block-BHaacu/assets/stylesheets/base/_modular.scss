@@ -3,11 +3,18 @@ Modular Classes
 --------------------------------------------------------------- */
 .flex {
   display: flex;
+}
+
+.justify-between {
   justify-content: space-between;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.center {
+  text-align: center;
 }
 
 .align-center {
@@ -18,4 +25,30 @@ Modular Classes
   max-width: 66rem;
   margin: 0 auto;
   padding: 0 2rem;
+  width: 100%;
+}
+
+.padding {
+  padding: 2rem 0;
+}
+
+#active {
+  color: $pure;
+  background-color: $primary;
+  padding: 1.7rem 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  display: inline-block;
+  border: 3px solid $primary;
+  &-primary {
+    background-color: $primary;
+    color: $pure;
+  }
+
+  &-secondary {
+    border-top: 3px solid $text;
+  }
 }

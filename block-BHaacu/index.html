@@ -22,7 +22,7 @@
   <body>
     <header class="header">
       <div class="header_top-bar">
-        <nav class="flex container align-center">
+        <nav class="flex container align-center justify-between">
           <ul class="flex align-center">
             <li>
               <a href="tel:1234567890"
@@ -35,7 +35,7 @@
               >
             </li>
           </ul>
-          <ul class="flex">
+          <ul class="flex justify-between">
             <li>
               <a href="#"><i class="fab fa-facebook-square"></i></a>
             </li>
@@ -52,14 +52,34 @@
         </nav>
       </div>
       <div class="header_nav-bar">
-        <nav class="flex container">
+        <nav class="flex container align-center justify-between">
           <a href="#" class="brand"><span>Uni</span>TECH</a>
-          <ul class="flex">
-            <li><a href="#">Home</a></li>
+          <ul class="flex justify-between">
+            <li><a id="active" href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Blog</a></li>
+            <li class="sub-menu-box">
+              <a href="#" class="flex justify-between align-center">
+                <span>Pages</span>
+                <i class="fas fa-sort-down"></i>
+              </a>
+              <ul class="sub-menu">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">404 Page</a></li>
+              </ul>
+            </li>
+            <li class="sub-menu-box">
+              <a href="#" class="flex">
+                <span>Blog</span>
+                <i class="fas fa-sort-down"></i>
+              </a>
+              <ul class="sub-menu">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">404 Page</a></li>
+              </ul>
+            </li>
             <li><a href="#">Contact Us</a></li>
           </ul>
         </nav>
@@ -71,12 +91,14 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero_heading">
-            BEST BUSINESS <br />
-            SERVICES
-          </h1>
-          <p class="hero_text">Let's Grow Your Business Together</p>
-          <a href="#" class="btn btn-primary">Quick Call</a>
+          <article>
+            <h1 class="hero_heading">
+              BEST BUSINESS <br />
+              SERVICES
+            </h1>
+            <h4 class="hero_text">Let's Grow Your Business Together</h4>
+            <a href="#" class="btn btn-primary">Quick Call</a>
+          </article>
         </div>
       </section>
 
@@ -220,5 +242,94 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer padding">
+      <div class="container sm-center flex wrap justify-between">
+        <div class="flex-100">
+          <h4>Reach Us</h4>
+          <address>
+            <p>#123 Manhatt 7 Avenu,NYC</p>
+          </address>
+          <nav>
+            <ul>
+              <li>
+                <a href="tel:1234567890"
+                  ><i class="fas fa-phone-alt"></i>+1-1245-678-980</a
+                >
+              </li>
+              <li>
+                <a href="mailto: info@yourdomain.com"
+                  ><i class="fas fa-envelope"></i>info@yourdomain.com</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex-100">
+          <h4>Site Links</h4>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Portfolio</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex-100">
+          <h4>Quick Links</h4>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Terms & Conditions</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex-100">
+          <h4>Follow Us</h4>
+          <nav>
+            <ul class="flex">
+              <li>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-basketball-ball"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="copyright center padding">
+        <p><strong>Bootstrap Theme</strong>by Web Themez</p>
+        <small>@copy;All Rights Reserved</small>
+      </div>
+    </footer>
   </body>
 </html>
