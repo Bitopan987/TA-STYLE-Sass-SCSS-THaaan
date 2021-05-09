@@ -7,5 +7,9 @@ Import partials
 @import "base/vars";
 @import "base/modular";
 @import "base/header";
-@import "home/index";
-@import "about/index";
+@import "pages/home";
+@import "pages/about";
+@import "pages/services";
+@import "pages/contact";
+@import "pages/pricing";
+@import "pages/error";

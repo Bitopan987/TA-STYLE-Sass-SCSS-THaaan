@@ -5,11 +5,23 @@ Modular Classes
   display: flex;
 }
 
+.flex-48 {
+  flex: 0 1 48%;
+}
+
+.flex-30 {
+  flex: 0 1 31%;
+}
+
+.flex-23 {
+  flex: 0 1 23%;
+}
+
 .justify-between {
   justify-content: space-between;
 }
 
-.flex-wrap {
+.wrap {
   flex-wrap: wrap;
 }
 
@@ -29,7 +41,7 @@ Modular Classes
 }
 
 .padding {
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 #active {
@@ -39,16 +51,40 @@ Modular Classes
 }
 
 .btn {
-  padding: 0.6rem 1.2rem;
+  padding: 0.5rem 1.3rem;
   border-radius: 25px;
   display: inline-block;
-  border: 3px solid $primary;
+  border: 2px solid $primary;
   &-primary {
     background-color: $primary;
     color: $pure;
   }
-
   &-secondary {
+    border-bottom: 3px solid $text;
+    color: $primary;
+  }
+  &-tertiary {
     border-top: 3px solid $text;
+    color: $primary;
+  }
+  &-ternary {
+    border-color: $bg;
+    color: $bg;
+  }
+  &-card {
+    color: $primary;
+  }
+  &-active {
+    color: $pure;
+    background-color: $primary;
+  }
+}
+
+.top_section {
+  background-color: $primary;
+  color: $pure;
+  h3 {
+    padding-bottom: 0.5rem;
+    font-size: 2.7rem;
   }
 }
