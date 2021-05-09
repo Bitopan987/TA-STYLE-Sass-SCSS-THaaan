@@ -4,7 +4,10 @@
 .hero {
   background: url(/block-BHaacu/assets/media/banner-1.jpg);
   background-size: cover;
-
+  background-position: center;
+  @media screen and (max-width: $breakpoint-mobile) {
+    background-position: 70% 0;
+  }
   .container {
     height: 100vh;
   }
@@ -27,6 +30,9 @@
 .service {
   &_heading {
     padding: 2rem 0 0.5rem 0;
+    @media screen and (max-width: $breakpoint-mobile) {
+      padding: 0;
+    }
   }
   &_text {
     font-size: 1.3rem;
@@ -38,6 +44,10 @@
     padding: 2rem;
     text-align: center;
     border-radius: 5px;
+    @media screen and (max-width: $breakpoint-mobile) {
+      flex: 0 1 100%;
+      margin-bottom: 1.5rem;
+    }
     img {
       width: 5rem;
       height: 4rem;
@@ -71,10 +81,16 @@ About Section
 .about {
   &_col {
     padding: 2rem 0 5rem 0;
+    @media screen and (max-width: $breakpoint-mobile) {
+      padding-bottom: 2rem;
+    }
   }
   &_content {
+    @media screen and (max-width: $breakpoint-mobile) {
+      margin-bottom: 2rem;
+    }
     h3 {
-      line-height: 1;
+      line-height: 1.2;
     }
     img {
       width: 4rem;
@@ -90,11 +106,17 @@ About Section
     background-color: $primary;
     &_text {
       h5 {
+        font-size: 1.3rem;
         color: $pure;
         line-height: 1.5;
       }
       p {
         color: $bg;
+      }
+      .btn {
+        @media screen and (max-width: $breakpoint-mobile) {
+          margin-top: 2rem;
+        }
       }
     }
   }
@@ -105,6 +127,9 @@ Role Section
 --------------------------------------------------------------- */
 
 .role {
+  @media screen and (max-width: $breakpoint-mobile) {
+    padding-bottom: 3rem;
+  }
   &_content {
     p {
       padding: 1rem 0;
@@ -124,45 +149,11 @@ client Section
   }
   li {
     flex: 0 1 15%;
+    @media screen and (max-width: $breakpoint-mobile) {
+      flex: 0 1 30%;
+    }
     img {
       filter: grayscale(100%);
-    }
-  }
-}
-
-/* ---------------------------------------------------------------
-Footer
---------------------------------------------------------------- */
-
-.footer {
-  background-color: $secondary;
-  h4 {
-    color: $pure;
-    padding: 0.7rem 0;
-  }
-  a {
-    color: $text;
-  }
-  p {
-    color: $text;
-  }
-  i {
-    color: $pure;
-    padding-right: 0.7rem;
-  }
-  .copyright {
-    padding-top: 2rem;
-    p {
-      font-size: 0.7rem;
-    }
-    strong {
-      font-size: 0.9rem;
-      font-weight: 400;
-      padding-right: 0.5rem;
-    }
-    small {
-      font-size: 0.7rem;
-      color: $text;
     }
   }
 }

@@ -35,8 +35,8 @@
   <body>
     <header class="header">
       <div class="header_top-bar">
-        <nav class="flex container align-center justify-between">
-          <ul class="flex align-center">
+        <nav class="flex container align-center justify-between wrap">
+          <ul class="flex align-center flex-100 sm-center">
             <li>
               <a href="tel:1234567890"
                 ><i class="fas fa-phone-alt"></i>+1-1245-678-980</a
@@ -48,7 +48,7 @@
               >
             </li>
           </ul>
-          <ul class="flex justify-between">
+          <ul class="flex flex-100 sm-center">
             <li>
               <a href="#"><i class="fab fa-facebook-square"></i></a>
             </li>
@@ -65,51 +65,61 @@
         </nav>
       </div>
       <div class="header_nav-bar">
-        <nav class="flex container align-center justify-between">
+        <div class="flex container align-center justify-between">
           <a href="#" class="brand"><span>Uni</span>TECH</a>
-          <ul class="flex justify-between">
-            <li><a href="./index.html">Home</a></li>
-            <li><a id="active" href="./about.html">About Us</a></li>
-            <li><a href="./services.html">Services</a></li>
-            <li class="sub-menu-box">
-              <a href="#" class="flex justify-between align-center">
-                <span>Pages</span>
-                <i class="fas fa-sort-down"></i>
-              </a>
-              <ul class="sub-menu">
-                <li><a href="./pricing.html">Pricing</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="./error.html">404 Page</a></li>
-              </ul>
-            </li>
-            <li class="sub-menu-box">
-              <a href="#" class="flex">
-                <span>Blog</span>
-                <i class="fas fa-sort-down"></i>
-              </a>
-              <ul class="sub-menu">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Blog Single</a></li>
-              </ul>
-            </li>
-            <li><a href="./contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
+          <label class="bars" for="toggle">
+            <i class="fas fa-bars"></i>
+          </label>
+          <input type="checkbox" id="toggle" />
+          <nav class="nav">
+            <ul class="flex nav-menu justify-between">
+              <li><a href="./index.html">Home</a></li>
+              <li><a id="active" href="./about.html">About Us</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li class="sub-menu-box">
+                <a href="#" class="flex justify-between align-center">
+                  <span>Pages</span>
+                  <i class="fas fa-sort-down"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li><a href="./pricing.html">Pricing</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="./error.html">404 Page</a></li>
+                </ul>
+              </li>
+              <li class="sub-menu-box">
+                <a href="#" class="flex">
+                  <span>Blog</span>
+                  <i class="fas fa-sort-down"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Blog Single</a></li>
+                </ul>
+              </li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
       <!-- Top Section -->
 
       <section class="top_section center padding">
-        <h3>About Us</h3>
-        <p>Aspernatur at enim exceturi facere in reiciendies.</p>
+        <div class="container">
+          <h3>About Us</h3>
+          <p>Aspernatur at enim exceturi facere in reiciendies.</p>
+        </div>
       </section>
 
       <!-- About-Us Section -->
 
       <section class="about-us padding">
-        <div class="container about-us_col flex justify-between align-center">
-          <article class="about_content flex-48">
+        <div
+          class="container wrap about-us_col flex justify-between align-center"
+        >
+          <article class="about_content flex-48 flex-100">
             <h6>About us</h6>
             <h3>
               We are a Industry leader in technical and consulting services
@@ -122,7 +132,7 @@
               quisquam eaque.
             </p>
           </article>
-          <div class="flex-48">
+          <div class="flex-48 flex-100">
             <img src="./assets/media/img-woman-1.jpg" alt="img-woman-1.jpg" />
           </div>
         </div>
@@ -131,11 +141,11 @@
       <!-- Feature Section -->
 
       <section class="feature padding">
-        <div class="container flex align-center justify-between">
-          <div class="flex-48">
+        <div class="container wrap flex align-center justify-between">
+          <div class="flex-48 flex-100">
             <img src="./assets/media/vision.svg" alt="" />
           </div>
-          <div class="flex-48">
+          <div class="flex-48 flex-100">
             <div>
               <div class="flex align-center feature_col">
                 <i class="fas fa-rocket"></i>
@@ -178,28 +188,30 @@
       <!-- Team Section -->
 
       <section class="team padding">
-        <h3 class="center">Our Team</h3>
-        <h4 class="center">We are ready to grow with your business.</h4>
-        <div class="flex container justify-between align-center">
-          <div class="team_col flex-23">
-            <img src="./assets/media/team1.jpg" alt="team1.jpg" />
-            <h4>James Rally</h4>
-            <p>CEO</p>
-          </div>
-          <div class="team_col flex-23">
-            <img src="./assets/media/team2.jpg" alt="team1.jpg" />
-            <h4>Kristian Viller</h4>
-            <p>TECH DIRECTOR</p>
-          </div>
-          <div class="team_col flex-23">
-            <img src="./assets/media/team3.jpg" alt="team1.jpg" />
-            <h4>Johana Care</h4>
-            <p>HR DIRECTOR</p>
-          </div>
-          <div class="team_col flex-23">
-            <img src="./assets/media/team4.jpg" alt="team1.jpg" />
-            <h4>Bruce Williamson</h4>
-            <p>FINANCE DIRECTOR</p>
+        <div class="container">
+          <h3 class="center">Our Team</h3>
+          <h5 class="center">We are ready to grow with your business.</h5>
+          <div class="flex wrap justify-between align-center">
+            <div class="team_col flex-23 flex-100">
+              <img src="./assets/media/team1.jpg" alt="team1.jpg" />
+              <h4>James Rally</h4>
+              <p>CEO</p>
+            </div>
+            <div class="team_col flex-23 flex-100">
+              <img src="./assets/media/team2.jpg" alt="team1.jpg" />
+              <h4>Kristian Viller</h4>
+              <p>TECH DIRECTOR</p>
+            </div>
+            <div class="team_col flex-23 flex-100">
+              <img src="./assets/media/team3.jpg" alt="team1.jpg" />
+              <h4>Johana Care</h4>
+              <p>HR DIRECTOR</p>
+            </div>
+            <div class="team_col flex-23 flex-100">
+              <img src="./assets/media/team4.jpg" alt="team1.jpg" />
+              <h4>Bruce Wilson</h4>
+              <p>FINANCE DIRECTOR</p>
+            </div>
           </div>
         </div>
       </section>
@@ -207,14 +219,16 @@
       <!-- Solution Section -->
 
       <section class="solution-about padding">
-        <div class="solution_content center">
-          <h2>Get all type of Solutions</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum
-            aperiam porro voluptatem quaerat facere earum explicabo assumenda
-            eos rem!
-          </p>
-          <a href="#" class="btn">Read the story</a>
+        <div class="container">
+          <article class="solution_content center">
+            <h2>Get all type of Solutions</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              laborum aperiam porro voluptatem quaerat facere earum explicabo
+              assumenda eos rem!
+            </p>
+            <a href="#" class="btn">Read the story</a>
+          </article>
         </div>
       </section>
 
@@ -226,6 +240,11 @@
           <ul class="flex justify-between align-center">
             <li>
               <a href="#"
+                ><img src="./assets/media/fitbit.png" alt="fitbit.png"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
                 ><img src="./assets/media/spotify.png" alt="spotify.png"
               /></a>
             </li>
@@ -234,22 +253,17 @@
                 ><img src="./assets/media/glasfit.png" alt="glasfit.png"
               /></a>
             </li>
-            <li>
-              <a href="#"
-                ><img src="./assets/media/atlassian.png" alt="atlassian.png"
-              /></a>
-            </li>
-            <li>
+            <li class="display">
               <a href="#"
                 ><img src="./assets/media/oracle.png" alt="oracle.png"
               /></a>
             </li>
-            <li>
+            <li class="display">
               <a href="#"
                 ><img src="./assets/media/airbnb.png" alt="airbnb.png"
               /></a>
             </li>
-            <li>
+            <li class="display">
               <a href="#"
                 ><img src="./assets/media/patio.png" alt="patio.png"
               /></a>
@@ -280,7 +294,7 @@
               </ul>
             </nav>
           </div>
-          <div class="flex-100">
+          <div>
             <h4>Site Links</h4>
             <nav>
               <ul>
@@ -302,7 +316,7 @@
               </ul>
             </nav>
           </div>
-          <div class="flex-100">
+          <div>
             <h4>Quick Links</h4>
             <nav>
               <ul>
