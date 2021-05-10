@@ -35,8 +35,8 @@
   <body>
     <header class="header">
       <div class="header_top-bar">
-        <nav class="flex container align-center justify-between">
-          <ul class="flex align-center">
+        <nav class="flex container align-center justify-between wrap">
+          <ul class="flex align-center flex-100 sm-center">
             <li>
               <a href="tel:1234567890"
                 ><i class="fas fa-phone-alt"></i>+1-1245-678-980</a
@@ -48,7 +48,7 @@
               >
             </li>
           </ul>
-          <ul class="flex justify-between">
+          <ul class="flex flex-100 sm-center">
             <li>
               <a href="#"><i class="fab fa-facebook-square"></i></a>
             </li>
@@ -65,44 +65,52 @@
         </nav>
       </div>
       <div class="header_nav-bar">
-        <nav class="flex container align-center justify-between">
+        <div class="flex container align-center justify-between">
           <a href="#" class="brand"><span>Uni</span>TECH</a>
-          <ul class="flex justify-between">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./services.html">Services</a></li>
-            <li class="sub-menu-box">
-              <a href="#" class="flex justify-between align-center">
-                <span>Pages</span>
-                <i class="fas fa-sort-down"></i>
-              </a>
-              <ul class="sub-menu">
-                <li><a href="./pricing.html">Pricing</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="./error.html">404 Page</a></li>
-              </ul>
-            </li>
-            <li class="sub-menu-box">
-              <a href="#" class="flex">
-                <span>Blog</span>
-                <i class="fas fa-sort-down"></i>
-              </a>
-              <ul class="sub-menu">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Blog Single</a></li>
-              </ul>
-            </li>
-            <li><a id="active" href="./contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
+          <label class="bars" for="toggle">
+            <i class="fas fa-bars"></i>
+          </label>
+          <input type="checkbox" id="toggle" />
+          <nav class="nav">
+            <ul class="flex nav-menu justify-between">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li class="sub-menu-box">
+                <a href="#" class="flex justify-between align-center">
+                  <span>Pages</span>
+                  <i class="fas fa-sort-down"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li><a href="./pricing.html">Pricing</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="./error.html">404 Page</a></li>
+                </ul>
+              </li>
+              <li class="sub-menu-box">
+                <a href="#" class="flex">
+                  <span>Blog</span>
+                  <i class="fas fa-sort-down"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Blog Single</a></li>
+                </ul>
+              </li>
+              <li><a id="active" href="./contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
       <!-- Top Section -->
 
       <section class="top_section center padding">
-        <h3>Contact Us</h3>
-        <p>Aspernatur at enim exceturi facere in reiciendies.</p>
+        <div class="container">
+          <h3>Contact Us</h3>
+          <p>Aspernatur at enim exceturi facere in reiciendies.</p>
+        </div>
       </section>
 
       <!-- Contact Section -->
@@ -114,22 +122,22 @@
             voluptatem nam odit soluta nisi illum corrupti reiciendis provident,
             itaque, quisquam, sunt tempore rem quas incidunt?
           </p>
-          <div class="flex justify-between align-center">
-            <article class="contact_col flex-30">
+          <div class="flex justify-between wrap align-center">
+            <article class="contact_col flex-30 flex-100">
               <a class="contact_icon" href="#"
                 ><i class="fas fa-location-arrow"></i
               ></a>
               <h4>Address</h4>
               <h5>132 Manhatten Str,NewYork,US</h5>
             </article>
-            <article class="contact_col flex-30">
+            <article class="contact_col flex-30 flex-100">
               <a class="contact_icon" href="#"
                 ><i class="fas fa-phone-alt"></i
               ></a>
               <h4>Phone Number</h4>
               <h5><a class="dark" href="#">1-234-567-2401</a></h5>
             </article>
-            <article class="contact_col flex-30">
+            <article class="contact_col flex-30 flex-100">
               <a class="contact_icon" href="#"
                 ><i class="fas fa-envelope"></i
               ></a>
@@ -143,46 +151,48 @@
       <!-- form Section -->
 
       <section class="form padding">
-        <h3 class="center">Let us know</h3>
-        <h4 class="center">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit <br />
-          Soluta, debitis? Aperiam aliquam repudiandae, similique omnis
-          exercitationem deleniti?
-        </h4>
-        <figure class="container flex justify-between">
-          <div class="flex-48">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1681900.3030516254!2d-115.4895363274647!3d36.13448829255653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80cf5bfe0ab73053%3A0xdbf4b8eeb0b8e622!2sColosseum%20Mine!5e0!3m2!1sen!2sin!4v1620544820436!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-          <form class="flex-48">
-            <fieldset>
-              <input
-                class="form_control"
-                type="text"
-                name="username"
-                placeholder="Full Name"
-              />
-              <input
-                class="form_control"
-                type="email"
-                name="email"
-                placeholder="Email"
-              />
-              <textarea
-                name="message"
-                class="form_control"
-                placeholder="Message"
-                rows="10"
-              ></textarea>
-            </fieldset>
-          </form>
-        </figure>
+        <div class="container">
+          <h3 class="center">Let us know</h3>
+          <h4 class="center">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit <br />
+            Soluta, debitis? Aperiam aliquam repudiandae, similique omnis
+            exercitationem deleniti?
+          </h4>
+          <figure class="flex wrap justify-between">
+            <div class="flex-48 flex-100">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1681900.3030516254!2d-115.4895363274647!3d36.13448829255653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80cf5bfe0ab73053%3A0xdbf4b8eeb0b8e622!2sColosseum%20Mine!5e0!3m2!1sen!2sin!4v1620544820436!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <form class="flex-48 flex-100">
+              <fieldset>
+                <input
+                  class="form_control"
+                  type="text"
+                  name="username"
+                  placeholder="Full Name"
+                />
+                <input
+                  class="form_control"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+                <textarea
+                  name="message"
+                  class="form_control"
+                  placeholder="Message"
+                  rows="10"
+                ></textarea>
+              </fieldset>
+            </form>
+          </figure>
+        </div>
       </section>
     </main>
 
@@ -208,7 +218,7 @@
             </ul>
           </nav>
         </div>
-        <div class="flex-100">
+        <div>
           <h4>Site Links</h4>
           <nav>
             <ul>
@@ -230,7 +240,7 @@
             </ul>
           </nav>
         </div>
-        <div class="flex-100">
+        <div>
           <h4>Quick Links</h4>
           <nav>
             <ul>

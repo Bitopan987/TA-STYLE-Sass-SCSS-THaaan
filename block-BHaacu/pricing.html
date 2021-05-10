@@ -22,8 +22,8 @@
   <body>
     <header class="header">
       <div class="header_top-bar">
-        <nav class="flex container align-center justify-between">
-          <ul class="flex align-center">
+        <nav class="flex container align-center justify-between wrap">
+          <ul class="flex align-center flex-100 sm-center">
             <li>
               <a href="tel:1234567890"
                 ><i class="fas fa-phone-alt"></i>+1-1245-678-980</a
@@ -35,7 +35,7 @@
               >
             </li>
           </ul>
-          <ul class="flex justify-between">
+          <ul class="flex flex-100 sm-center">
             <li>
               <a href="#"><i class="fab fa-facebook-square"></i></a>
             </li>
@@ -52,44 +52,52 @@
         </nav>
       </div>
       <div class="header_nav-bar">
-        <nav class="flex container align-center justify-between">
+        <div class="flex container align-center justify-between">
           <a href="#" class="brand"><span>Uni</span>TECH</a>
-          <ul class="flex justify-between">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./services.html">Services</a></li>
-            <li class="sub-menu-box">
-              <a href="#" class="flex justify-between align-center">
-                <span>Pages</span>
-                <i class="fas fa-sort-down"></i>
-              </a>
-              <ul class="sub-menu">
-                <li><a href="./pricing.html">Pricing</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="./error.html">404 Page</a></li>
-              </ul>
-            </li>
-            <li class="sub-menu-box">
-              <a href="#" class="flex">
-                <span>Blog</span>
-                <i class="fas fa-sort-down"></i>
-              </a>
-              <ul class="sub-menu">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Blog Single</a></li>
-              </ul>
-            </li>
-            <li><a href="./contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
+          <label class="bars" for="toggle">
+            <i class="fas fa-bars"></i>
+          </label>
+          <input type="checkbox" id="toggle" />
+          <nav class="nav">
+            <ul class="flex nav-menu justify-between">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li class="sub-menu-box">
+                <a href="#" class="flex justify-between align-center">
+                  <span>Pages</span>
+                  <i class="fas fa-sort-down"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li><a href="./pricing.html">Pricing</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="./error.html">404 Page</a></li>
+                </ul>
+              </li>
+              <li class="sub-menu-box">
+                <a href="#" class="flex">
+                  <span>Blog</span>
+                  <i class="fas fa-sort-down"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Blog Single</a></li>
+                </ul>
+              </li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
       <!-- Top Section -->
 
       <section class="top_section center padding">
-        <h3>Pricing</h3>
-        <p>Aspernatur at enim exceturi facere in reiciendies.</p>
+        <div class="container">
+          <h3>Pricing</h3>
+          <p>Aspernatur at enim exceturi facere in reiciendies.</p>
+        </div>
       </section>
 
       <!-- Price Section -->
@@ -101,8 +109,8 @@
             adipisci. Provident magnam autem cumque architecto <br />
             soluta odio deleniti a delectus distinctio iusto ipsa ut.
           </p>
-          <div class="flex justify-between align-center">
-            <article class="price_card center flex-30">
+          <div class="flex wrap justify-between align-center">
+            <article class="price_card center flex-30 flex-100">
               <h4>Free</h4>
               <strong>$0</strong>
               <h5>Single License</h5>
@@ -113,7 +121,7 @@
               <p>-No Support</p>
               <a href="#" class="btn btn-card">Download Now</a>
             </article>
-            <article class="price_card center flex-30">
+            <article class="price_card center flex-30 flex-100">
               <h4>Basic</h4>
               <strong>$12</strong>
               <h5>Multi License</h5>
@@ -124,7 +132,7 @@
               <p>-Limited Support</p>
               <a href="#" class="btn btn-active">Download Now</a>
             </article>
-            <article class="price_card center flex-30">
+            <article class="price_card center flex-30 flex-100">
               <h4>Premium</h4>
               <strong>$39</strong>
               <h5>Extended License</h5>
@@ -149,42 +157,42 @@
             soluta in facilis porro.
           </p>
           <div class="flex wrap justify-between align-center">
-            <article class="faq_content flex-48">
+            <article class="faq_content flex-48 flex-100">
               <h5>Can I use this for commercial ?</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem soluta in facilis porro.
               </p>
             </article>
-            <article class="faq_content flex-48">
+            <article class="faq_content flex-48 flex-100">
               <h5>How many licenses are there?</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem soluta in facilis porro.
               </p>
             </article>
-            <article class="faq_content flex-48">
+            <article class="faq_content flex-48 flex-100">
               <h5>Can I remove templete backlink?</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem soluta in facilis porro.
               </p>
             </article>
-            <article class="faq_content flex-48">
+            <article class="faq_content flex-48 flex-100">
               <h5>Can I use for multiple clients?</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem soluta in facilis porro.
               </p>
             </article>
-            <article class="faq_content flex-48">
+            <article class="faq_content flex-48 flex-100">
               <h5>Do I get working contact form?</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem soluta in facilis porro.
               </p>
             </article>
-            <article class="faq_content flex-48">
+            <article class="faq_content flex-48 flex-100">
               <h5>How to make a payment?</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -217,7 +225,7 @@
             </ul>
           </nav>
         </div>
-        <div class="flex-100">
+        <div>
           <h4>Site Links</h4>
           <nav>
             <ul>
@@ -239,7 +247,7 @@
             </ul>
           </nav>
         </div>
-        <div class="flex-100">
+        <div>
           <h4>Quick Links</h4>
           <nav>
             <ul>

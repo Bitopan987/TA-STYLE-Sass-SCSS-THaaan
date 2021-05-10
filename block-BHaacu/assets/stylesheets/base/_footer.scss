@@ -1,42 +1,36 @@
-/*---------------------------------------------
-Component - Footer
----------------------------------------------*/
-.trikone__footer {
-  text-align: center;
-  padding: 5rem 2rem;
-  background-color: $bg-color;
-  color: $black-stan;
-  a:not(.logo) {
-    // color:
-    &:hover {
-      color: $orange-summer;
-    }
-    &:active {
-      //   color:
-    }
-    &:focus {
-      //   color:
-    }
-  }
-  &__nav-items {
-    display: flex;
-    justify-content: center;
+/* ---------------------------------------------------------------
+Footer
+--------------------------------------------------------------- */
 
-    max-width: 22rem;
-    margin: 0 auto;
-    padding: 1rem 0;
+.footer {
+  background-color: $secondary;
+  h4 {
+    color: $pure;
+    padding: 0.7rem 0;
   }
-  &__nav-item {
-    margin-right: 20px;
-    a {
-      font-weight: 700;
-    }
-    // Till we include internal SVGs
-    img {
-      width: 2rem;
-    }
+  a {
+    color: $text;
   }
-  &__nav-item:last-child {
-    margin-right: 0;
+  p {
+    color: $text;
+  }
+  i {
+    color: $pure;
+    padding-right: 0.7rem;
+  }
+  .copyright {
+    padding-top: 2rem;
+    p {
+      font-size: 0.7rem;
+    }
+    strong {
+      font-size: 0.9rem;
+      font-weight: 400;
+      padding-right: 0.5rem;
+    }
+    small {
+      font-size: 0.7rem;
+      color: $text;
+    }
   }
 }

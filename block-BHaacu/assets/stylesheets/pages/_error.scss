@@ -21,6 +21,9 @@
     color: $primary;
   }
   &_col {
+    @media screen and (max-width: $breakpoint-mobile) {
+      margin-bottom: 2rem;
+    }
     h4 {
       padding: 0.7rem 0;
     }
