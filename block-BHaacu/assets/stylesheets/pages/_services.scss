@@ -1,0 +1,115 @@
+/* ---------------------------------------------------------------
+ Our-Services Section
+--------------------------------------------------------------- */
+
+.our-service {
+  article {
+    @media screen and (max-width: $breakpoint-mobile) {
+      margin-bottom: 2rem;
+    }
+  }
+  h6 {
+    color: $primary;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+  }
+  p {
+    color: $dark;
+  }
+}
+
+/* ---------------------------------------------------------------
+ Our-Service Section
+--------------------------------------------------------------- */
+
+.product {
+  background-color: $bg;
+  &_heading {
+    padding: 5rem 0 0.5rem 0;
+  }
+  &_text {
+    font-size: 1.3rem;
+    padding-bottom: 3rem;
+  }
+  &_col {
+    border: 2px solid $pure;
+    flex: 0 1 30%;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    @media screen and (max-width: $breakpoint-mobile) {
+      flex: 0 1 100%;
+    }
+    img {
+      width: 5rem;
+      height: 4rem;
+    }
+    p {
+      padding: 0.5rem 0 1rem 0;
+    }
+  }
+  .quote {
+    background-color: $primary;
+    margin-top: 4rem;
+    @media screen and (max-width: $breakpoint-mobile) {
+      text-align: center;
+    }
+    .btn {
+      @media screen and (max-width: $breakpoint-mobile) {
+        margin-top: 3rem;
+      }
+    }
+    &_text {
+      strong {
+        font-size: 1.6rem;
+        padding-right: 0.5rem;
+        font-weight: 600;
+        color: $pure;
+        @media screen and (max-width: $breakpoint-mobile) {
+          margin-bottom: 1rem;
+        }
+      }
+      h5 {
+        color: $bg;
+        line-height: 1.5;
+      }
+      p {
+        color: $bg;
+      }
+    }
+  }
+}
+
+/* ---------------------------------------------------------------
+ Award Section
+--------------------------------------------------------------- */
+
+.award {
+  h5 {
+    color: $dark;
+    font-weight: 300;
+    padding-top: 1rem;
+  }
+  &_col {
+    padding: 4rem 0 0 0;
+  }
+  &_content {
+    @media screen and (max-width: $breakpoint-mobile) {
+      margin-bottom: 2rem;
+    }
+    h3 {
+      line-height: 1.4;
+    }
+    img {
+      width: 4rem;
+      height: 3.5rem;
+      padding-bottom: 0.6rem;
+    }
+    p {
+      font-size: 1.2rem;
+      padding: 0.7rem 0;
+      color: $dark;
+    }
+  }
+}

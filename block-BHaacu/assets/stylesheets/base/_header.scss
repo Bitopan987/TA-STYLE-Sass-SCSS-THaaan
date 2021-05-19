@@ -1,0 +1,144 @@
+/* ---------------------------------------------------------------
+ Header
+--------------------------------------------------------------- */
+
+.header {
+  li {
+    margin-right: 1rem;
+  }
+  &_top-bar {
+    background-color: $primary;
+    padding: 0.5rem 0;
+    a {
+      color: $bg;
+      font-size: 1rem;
+    }
+    i {
+      padding-right: 0.5rem;
+      color: $pure;
+    }
+  }
+  &_nav-bar {
+    background-color: $bg;
+    padding: 0.6rem 0;
+    position: relative;
+    .nav {
+      @media screen and (max-width: $breakpoint-mobile) {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 5rem;
+        z-index: 9;
+      }
+    }
+    .brand {
+      font-size: 2.2rem;
+      color: $secondary;
+      font-weight: 900;
+    }
+    .bars {
+      display: none;
+      @media screen and (max-width: $breakpoint-mobile) {
+        position: absolute;
+        right: 2rem;
+        z-index: 99;
+        color: $pure;
+        background-color: $primary;
+        padding: 0.2rem 0.5rem;
+        border-radius: 5px;
+        display: block;
+      }
+    }
+  }
+  .nav-menu {
+    @media screen and (max-width: $breakpoint-mobile) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    li {
+      @media screen and (max-width: $breakpoint-mobile) {
+        margin: 1.5rem 0;
+      }
+      a {
+        @media screen and (max-width: $breakpoint-mobile) {
+          font-size: 2rem;
+          color: $text;
+        }
+      }
+    }
+  }
+  .brand span {
+    color: $primary;
+    padding-right: 0.3rem;
+  }
+  a {
+    font-weight: 600;
+    font-size: 1rem;
+    &:hover {
+      color: $primary;
+    }
+    @media screen and (max-width: $breakpoint-mobile) {
+      font-size: 0.8rem;
+    }
+  }
+  .sub-menu-box {
+    position: relative;
+  }
+  .sub-menu {
+    position: absolute;
+    background-color: $pure;
+    width: 10rem;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+    top: 2.4rem;
+    z-index: 99;
+    border-radius: 7px;
+    @media screen and (max-width: $breakpoint-mobile) {
+      top: 3.5rem;
+    }
+  }
+  .sub-menu::before {
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    background-color: $pure;
+    position: absolute;
+    z-index: -99;
+    transform: rotate(45deg);
+    top: -0.6rem;
+    left: 42%;
+  }
+  .sub-menu-box:hover .sub-menu {
+    display: inline-block;
+  }
+  .sub-menu li {
+    margin: 13px 0;
+    a:hover {
+      color: $primary;
+    }
+  }
+
+  .sub-menu-box i {
+    padding: 0 0 6px 5px;
+  }
+  #toggle {
+    display: none;
+    @media screen and (max-width: $breakpoint-mobile) {
+      display: block;
+    }
+  }
+  #toggle:checked ~ .nav {
+    @media screen and (max-width: $breakpoint-mobile) {
+      display: inline-block;
+    }
+  }
+}

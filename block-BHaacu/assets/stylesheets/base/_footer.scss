@@ -1,0 +1,36 @@
+/* ---------------------------------------------------------------
+Footer
+--------------------------------------------------------------- */
+
+.footer {
+  background-color: $secondary;
+  h4 {
+    color: $pure;
+    padding: 0.7rem 0;
+  }
+  a {
+    color: $text;
+  }
+  p {
+    color: $text;
+  }
+  i {
+    color: $pure;
+    padding-right: 0.7rem;
+  }
+  .copyright {
+    padding-top: 2rem;
+    p {
+      font-size: 0.7rem;
+    }
+    strong {
+      font-size: 0.9rem;
+      font-weight: 400;
+      padding-right: 0.5rem;
+    }
+    small {
+      font-size: 0.7rem;
+      color: $text;
+    }
+  }
+}
